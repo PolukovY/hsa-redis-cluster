@@ -73,9 +73,9 @@ The result is
 ```
          Name                        Command               State          Ports        
 --------------------------------------------------------------------------------------
-rediscluster_master_1     docker-entrypoint.sh redis ...   Up      6379/tcp            
-rediscluster_sentinel_1   docker-entrypoint.sh redis ...   Up      26379/tcp, 6379/tcp 
-rediscluster_slave_1      docker-entrypoint.sh redis ...   Up      6379/tcp     
+redis_master_1     docker-entrypoint.sh redis ...   Up      6379/tcp            
+redis_sentinel_1   docker-entrypoint.sh redis ...   Up      26379/tcp, 6379/tcp 
+redis_slave_1      docker-entrypoint.sh redis ...   Up      6379/tcp     
 ```
 
 Scale out the instance number of sentinel
